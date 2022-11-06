@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400&amp;lang=de">
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=de">
+    <title>Nationaler Grossanlass 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400&amp;lang=de">
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=de">
     <style>
         body {
             background-image: url(images/footer_jubla_welten.png);
@@ -11,87 +16,131 @@
             background-position: bottom;
             margin: 0;
         }
-        #footer {
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            height: 60px;
+            width: 100%;
             background-color: #273583;
-            font-family: Tahoma, Arial;
-            position:absolute;
-            width:100%;
-            bottom:0px;
-            height:60px;
-            padding-left: 0px;
+            color: white;
+            text-align: center;
         }
-        .main {
-            position:relative;
-            min-height:100%;
-            height:auto !important;
-            height:100%;
-            top: 50px;
-            margin: 0 25% -4em 25%;
-            font-family: Verdana, Arial, Tahoma, Times New Roman;
-            font-size: 0.8em;
-            word-spacing: 1px;
-            line-height: 170%;
-            /*padding-bottom: 40px;*/
-        }
-        #outerdiv {
-            position:relative;
-            display: flex; 
-            min-height:100%;
-            height:auto !important;
-            height:100%;
-            top: 150px;
-            margin: 0 25% -4em 25%;
-        }
-        .innerdiv {
-            width:500px;
-            height: 250px;
-            background-color: #273583;
-            margin: 0px 20px 0px 0px ;
-            padding: 20px;
+        .footer p,
+        .footer a {
+            color: #FFFFFF;
             font-family: Roboto;
+            font-size: 10pt;
+            line-height: 40px;
+            font-weight: 300;
+            text-decoration: none;
         }
-        .innerdiv.p {
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 30px;
+            text-align: left;
+            color: #FFFFFF;
+            font-family: Roboto;
+            font-size: 18pt;
+            line-height: 18pt;
+            font-weight: 300;
+            text-align: center;
+            max-width: 1000px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .flex-item-1,
+        .flex-item-2,
+        .flex-item-3 {
+            background-color: #273583;
+            padding: 10px;
+            flex: 30%;
+            margin: 0px 15px 15px 15px;
+            padding: 20px;
+        }
+
+        .flex-item-1 p,
+        .flex-item-2 p,
+        .flex-item-3 p {
             color: #FFFFFF;
             font-family: Roboto;
             font-size: 18pt;
             line-height: 18pt;
             font-weight: 300;
         }
+
         h1 {
             color: #273583;
             font-family: Roboto;
             font-size: 26pt;
             line-height: 26pt;
             font-weight: 700;
+            text-align: center;
+            margin-top: 50px;
         }
+
         p {
             color: #000000;
             font-family: Roboto;
             font-size: 14pt;
             line-height: 14pt;
             font-weight: 300;
+            text-align: center;
+        }
+
+        /* Responsive layout - makes a one column-layout instead of a two-column layout */
+        @media (max-width: 800px) {
+            body {
+                padding-bottom: 250px;
+            }
+            .flex-container {
+                max-width: 100%;
+                width: 100%;
+            }
+            .flex-item-1,
+            .flex-item-2,
+            .flex-item-3 {
+                flex: 30%;
+                margin: 20px 20px 20px 20px;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class=main>
-        <h1>Nationaler Grossanlass 2025</h1>
-        <p>Bald entsteht hier die Webseite des nationalen Grossanlass 2025 von Jungwacht Blauring Schweiz.</p>
+
+    <h1>Nationaler Grossanlass 2025</h1>
+
+    <p>Bald entsteht hier die Webseite des nationalen Grossanlass 2025 von Jungwacht Blauring Schweiz.</p>
+    <br /><br />
+
+    <div class="flex-container">
+        <div class="flex-item-1">
+            <p><span>Jungwacht Blauring Schweiz</span></p>
+            <a href="https://www.jubla.ch" target="_blank"><img src="images/jubla_logo.png"><br /></a>
+        </div>
+        <div class="flex-item-2">
+            <p>Mithelfen</p>
+            <a href="https://www.jubla.ch/ueber-die-jubla/organisation/jobs" target="_blank"><img
+                    src="images/jobs_ico.png"></a><br />
+        </div>
+        <div class="flex-item-3">
+            <p>Kontakt</p>
+            <a href="mailto:praesidium@grossanlass2025.ch"><img src="images/contact_ico.png"><br /></a>
+        </div>
     </div>
-    <div id="outerdiv">
-        <div class="innerdiv p">
-            <span>Jungwacht Blauring Schweiz</span>
-            <a href="https://www.jubla.ch" target="_blank"><img src="images/jubla_logo.png"><br/></a>
-        </div>
-        <div class="innerdiv p">
-            <span>Mithelfen</span>
-            <a href="https://www.jubla.ch/ueber-die-jubla/organisation/jobs" target="_blank"><img src="images/jobs_ico.png"></a><br/>
-        </div>
-        <div class="innerdiv p">
-            <span>Kontakt</span>
-            <a href="mailto:praesidium@grossanlass2025.ch"><img src="images/contact_ico.png"><br/></a>
-        </div>
+    <div class="footer">
+        <p><a href="impressum.html">Impressum</a> | <a href="mailto:praesidium@grossanlass2025.ch">Kontakt</a></p>
     </div>
-    <div id=footer></div>
+
 </body>
+
 </html>
